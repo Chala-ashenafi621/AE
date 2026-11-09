@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Directory</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <header>
+    <h1>🎓 Student Directory</h1>
+    <button id="theme" type="button">☀️ Light</button>
+  </header>
+
+  <form id="form">
+    <input id="name" placeholder="Student name" required aria-label="Student name">
+    <select id="dept" aria-label="Department">
+      <option>Software</option>
+      <option>Electrical</option>
+      <option>Mechanical</option>
+      <option>Civil</option>
+      <option>school of elec.</option>
+      <option>CSE</option>
+      <option>ECE</option>
+      <option>POWER</option>
+      <option>ARCH.</option>
+
+    </select>
+    <select id="year" aria-label="Year">
+      <option value="1">freshman</option>
+      <option value="2">Year 2</option>
+      <option value="3">Year 3</option>
+      <option value="4">Year 4</option>
+      <option value="5">year 5</option>
+    </select>
+    <button id="add" type="submit">Add</button>
+  </form>
+  <div class="filters" id="filters"></div>
+  <ul id="list"></ul>
+  <p id="count"></p>
+</main>
+<script src="script.js" defer></script>
+</body>
+</html>
